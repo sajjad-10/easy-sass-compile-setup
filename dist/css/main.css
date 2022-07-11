@@ -1,0 +1,28 @@
+body a,
+body a:hover,
+body a:focus,
+body a:active {
+  text-decoration: none;
+  color: inherit; }
+
+body a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */ }
+
+body a {
+  color: inherit; }
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/**
+ * generate rem size
+ * @param  {number} $pxsize
+ * @return {string}
+ */
+h1 {
+  font-size: 6.25rem; }
