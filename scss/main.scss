@@ -1,34 +1,24 @@
-// remove Default style
-body {
-    a,
-    a:hover,
-    a:focus,
-    a:active {
-        text-decoration: none;
-        color: inherit;
-    }
-    a {
-        color: inherit; /* blue colors for links too */
-        text-decoration: inherit; /* no underline */
-    }
-    a {
-        color: inherit;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-}
-/**
- * generate rem size
- * @param  {number} $pxsize
- * @return {string}
- */
- @function rem($pxsize) {
-    @return ($pxsize/16) + rem;
-}
+/*
+    * get helper file 
+    * can see Example each on it
+*/
+@import "library";
 
-h1{
-    font-size: rem(100);  
+body {
+    // use main variable
+    background-color: color(gray);
+    h1 {
+        // typographer
+        @include title_0;
+        // use rem sistema
+        padding: rem(100) rem(40);
+        color: color(gray_f5);
+        // use media queries
+        @include mq_max($sm) {
+            padding: rem(0) rem(20);
+        }
+    }
+    h2 {
+        @include title_1;
+    }
 }

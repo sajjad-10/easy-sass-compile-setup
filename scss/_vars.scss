@@ -1,0 +1,20 @@
+/**
+ * media query breakpoints
+ */
+$xxs: 400px;
+$xs: 500px;
+$sm: 800px;
+$md: 1050px;
+$xmd: 1200px;
+$lg: 1400px;
+$xlg: 1900px;
+$xxlg: 2500px;
+
+/**
+ * colors
+ * check color() in _function.scss
+ */
+$colors: (
+    gray: #465e82,
+    gray_f5: #f5f5f5,
+);

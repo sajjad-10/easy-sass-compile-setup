@@ -1,28 +1,110 @@
-body a,
-body a:hover,
-body a:focus,
-body a:active {
-  text-decoration: none;
-  color: inherit; }
-
-body a {
-  color: inherit;
-  /* blue colors for links too */
-  text-decoration: inherit;
-  /* no underline */ }
-
-body a {
-  color: inherit; }
-
-body ul {
-  list-style-type: none;
+/*
+    * get helper file 
+    * can see Example each on it
+*/
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
+  * a,
+  * a:hover,
+  * a:focus,
+  * a:active {
+    text-decoration: none;
+    color: inherit; }
+  * a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */ }
+  * a {
+    color: inherit; }
+  * ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
 
+/**
+ * media query breakpoints
+ */
+/**
+ * colors
+ * check color() in _function.scss
+ */
+/**
+ * media queries
+ * @param  {int} $width
+ */
 /**
  * generate rem size
  * @param  {number} $pxsize
  * @return {string}
+ * @use    padding: rem(100) rem(40);
  */
-h1 {
-  font-size: 6.25rem; }
+/**
+ * return hex code of color maps
+ * maps is placed in _vars.scss
+ * @param  {string} $key color name
+ * @return {string}      color hex
+ */
+/*
+    * How to use :
+        h1{
+            @include title_large_0;
+        }
+*/
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../dist/fonts/Rubik-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../dist/fonts/Rubik-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../dist/fonts/Rubik-Black.ttf") format("truetype"); }
+
+body {
+  background-color: #465e82; }
+  body h1 {
+    font-family: Rubik, tahoma, arial;
+    font-size: 6.25rem;
+    line-height: 2.9625rem;
+    font-weight: 900;
+    padding: 6.25rem 2.5rem;
+    color: #f5f5f5; }
+    @media only screen and (max-width: 800px) {
+      body h1 {
+        font-size: 3.125rem;
+        line-height: 1.48125rem;
+        font-weight: 500; } }
+    @media only screen and (max-width: 500px) {
+      body h1 {
+        font-size: 1.25rem;
+        line-height: 1.48125rem;
+        font-weight: 300; } }
+    @media only screen and (max-width: 800px) {
+      body h1 {
+        padding: 0rem 1.25rem; } }
+  body h2 {
+    font-family: Rubik, tahoma, arial;
+    font-size: 1.5625rem;
+    line-height: 2.9625rem;
+    font-weight: 900; }
+    @media only screen and (max-width: 800px) {
+      body h2 {
+        font-size: 0.9375rem;
+        line-height: 1.48125rem;
+        font-weight: 500; } }
+    @media only screen and (max-width: 500px) {
+      body h2 {
+        font-size: 0.625rem;
+        line-height: 1.48125rem;
+        font-weight: 300; } }
