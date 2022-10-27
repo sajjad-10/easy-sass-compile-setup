@@ -1,24 +1,4 @@
-/*
-    * get helper file 
-    * can see Example each on it
-*/
-@import "library";
+@import "library/library"; // for each file important
+@import "common/common";
+@import "pages/pages"; 
 
-body {
-    // use main variable
-    background-color: color(gray);
-    h1 {
-        // typographer
-        @include title_0;
-        // use rem sistema
-        padding: rem(100) rem(40);
-        color: color(gray_f5);
-        // use media queries
-        @include mq_max($sm) {
-            padding: rem(0) rem(20);
-        }
-    }
-    h2 {
-        @include title_1;
-    }
-}
