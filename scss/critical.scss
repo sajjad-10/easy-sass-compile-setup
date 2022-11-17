@@ -12,6 +12,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 .first-for-test--0 {
     @include first_for_test__0;
