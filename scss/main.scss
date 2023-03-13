@@ -1,4 +1,4 @@
 @import "library/library"; // for each file important
-@import "common/common";
-@import "pages/pages"; 
-
+@import "components/components"; // this is for atomic block
+@import "layout/layout"; // create little block components
+@import "pages/pages"; // create little block components
